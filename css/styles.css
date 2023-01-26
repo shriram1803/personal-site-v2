@@ -1,0 +1,303 @@
+#title {
+    background-color: black;
+    color: #fff;
+    padding: 0 100px 100px;
+}
+
+.container-fluid {
+    padding: 3% 15% 5%;
+}
+
+.title-padding {
+    padding: 5% 6% 5% 5%;
+}
+
+.fabrands {
+    padding-left: 10px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Montserrat-Black', sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+
+h2 {
+    font-family: "Monserrat-Bold", sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    padding-bottom: 3rem;
+}
+
+.navbar-brand {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: "Monserrat-Light", sans-serif;
+}
+
+.logo {
+    width: 30%;
+}
+
+.subheading {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+/* Header */
+
+.dp {
+    width: 20%;
+    position: absolute;
+    right: 13%;
+    top: 28%;
+    border-radius: 30%;
+}
+
+
+/* Features */
+
+#interests {
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 0;
+}
+
+.interest-elements {
+    padding: 5% 3% 3%;
+}
+
+.interest-elements img {
+    width: 40%;
+    margin-bottom: 35px;
+}
+
+h3 {
+    font-family: "Monserrat-Bold", sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.interest-elements p {
+    color: #8f8f8f;
+}
+
+.interest-elements i {
+    color: #ef8172;
+    margin: 10px;
+}
+
+.interest-elements i:hover {
+    color: #ff4c68;
+}
+
+/* Profiles */
+
+#profiles {
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 0;
+    border-radius:10px;
+    box-shadow: 3px 3px 3px #ccc;
+}
+
+.card {
+    border: none;
+}
+
+.profile-elements {
+    padding: 5% 3% 3% 2%;
+    width: 300px;
+    overflow: hidden;
+}
+
+.profile-elements img {
+    width: 100%;
+    margin-bottom: 35px;
+    transition: transform .3s ease-in-out;
+}
+
+.profile-elements:hover img {
+    transform: scale(1.2);
+}
+
+h3 {
+    font-family: "Monserrat-Bold", sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.profile-elements p {
+    color: #8f8f8f;
+}
+
+.profile-elements i {
+    color: #ef8172;
+    margin: 10px;
+}
+
+.profile-elements i:hover {
+    color: #ff4c68;
+}
+
+
+/* Skills section */
+
+#skills {
+    background-color: #d3d3d3;
+    text-align: left;
+    color: black;
+    font-weight: 700;
+    padding: 50px 0 150px;
+}
+
+.skills-font {
+    padding-left: 25%;
+}
+
+#skills h2 {
+    text-align: center;
+}
+
+#skills h3 {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#skills img {
+    width: 250px;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    /* margin: 35px 15px; */
+    /* border-radius: 100%; */
+}
+
+#skills p{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.carousel-item {    
+    padding: 5% 15% 0 10%;
+}
+
+.carousel-control-prev {
+    margin-top: 100px;
+}
+
+.carousel-control-next {
+    margin-top: 100px;
+}
+
+.skill-image {
+    position: absolute;
+    left: 13%;
+}
+
+
+@media (max-width: 1100px) {
+    #title {
+        text-align: center;
+    }
+
+    .subheading {
+        font-size: 20px;
+    }
+
+    #skills {
+        text-align: center;
+    }
+
+    .skill-image {
+        position: static;
+        text-align: center;
+    }
+
+    .skill-content {
+        text-align: left;
+    }
+
+    .dp {
+        position: static;
+        width: 300px;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 columns */
+    grid-gap: 10px; /* 10px spacing between items */
+    position: relative; /* needed for the popup effect */
+  }
+  
+  .grid-item {
+    position: relative; /* needed for the popup effect */
+    text-align: center;
+    margin: 0;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    transition: transform .3s ease-in-out;
+  }
+  
+  .grid-item:hover img {
+    transform: scale(1.2);
+  }
+  
+  .grid-item:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black background */
+    z-index: 1; /* make sure the popup is above the image */
+  }
+  
+
+/*Footer*/
+
+#footer {
+    padding: 5% 15%;
+    background-color: #fff;
+    text-align: center;
+}
+
+#footer a {
+    color: black;
+    margin: 0 10px;
+}
+
+#footer a:hover {
+    color: #696969;
+}
+
+#copy-right {
+    color: #8f8f8f;
+}
