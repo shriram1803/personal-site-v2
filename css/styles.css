@@ -130,7 +130,7 @@ h3 {
 }
 
 .profile-elements {
-    padding: 5% 3% 3% 2%;
+    padding: 5% 0% 3% 2%;
     width: 300px;
     overflow: hidden;
 }
@@ -143,6 +143,10 @@ h3 {
 
 .profile-elements:hover img {
     transform: scale(1.2);
+}
+
+#profile col {
+    padding-right: 0;
 }
 
 h3 {
@@ -162,6 +166,18 @@ h3 {
 
 .profile-elements i:hover {
     color: #ff4c68;
+}
+
+@media (max-width: 1100px) {
+    .profile-elements {
+        width: 100%;
+        text-align: center;
+    }
+    .profile-elements img {
+        width: 60%;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
 }
 
 
@@ -243,7 +259,7 @@ h3 {
 
     .dp {
         position: static;
-        width: 300px;
+        width: 200px;
     }
 }
 
@@ -279,7 +295,28 @@ h3 {
     background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black background */
     z-index: 1; /* make sure the popup is above the image */
   }
-  
+
+@media (max-width: 1100px) {
+    #skills img {
+        width: 200px;
+        position: static;
+        text-align: center;
+    }
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    #skills img {
+        width: 150px;
+        position: static;
+        text-align: center;
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 /*Footer*/
 
